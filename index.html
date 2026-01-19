@@ -357,7 +357,7 @@ footer {
     <button class="nav-btn right" onclick="scrollGallery('gallery1', 1)">&#10095;</button>
     <div class="dots" id="dots1"></div>
   </div>
-		<script type='text/javascript' src='//pl25360387.profitableratecpm.com/dd/2b/42/dd2b42b09a77c8efe6fdff35fbfbc733.js'></script>
+		
   <!-- Gallery 2 -->
   <h2>Recommended for You</h2>
   <div class="gallery-wrapper">
@@ -496,7 +496,7 @@ footer {
   
     <!-- Tombol NEXT -->
 <div style="text-align:center;">
-  <a href="https://zdravkovasilev.github.io" class="video-link next-page-button">NEXT</a>
+  <a href="https://ceothevdy-378.github.io/" class="video-link next-page-button">NEXT</a>
 </div>
 	
   <div style="text-align:center;">
@@ -517,105 +517,18 @@ footer {
   <p>&copy; 2025 Videy.co. All rights reserved.</p>
 </footer>
 </div>
- <script>
-    function setupProgressDots(galleryId, dotsId, interval = 5000) {
-      const gallery = document.getElementById(galleryId);
-      const figures = gallery.querySelectorAll("figure");
-      const dotsContainer = document.getElementById(dotsId);
-
-      let currentIndex = 0;
-      let timer;
-
-      // buat dot sesuai jumlah slide
-      figures.forEach((_, i) => {
-        const dot = document.createElement("div");
-        dot.classList.add("dot");
-        const progress = document.createElement("div");
-        progress.classList.add("progress");
-        dot.appendChild(progress);
-
-        dot.addEventListener("click", () => goToSlide(i));
-        dotsContainer.appendChild(dot);
-      });
-
-      const dots = dotsContainer.querySelectorAll(".dot .progress");
-
-      function goToSlide(index) {
-        currentIndex = index;
-        gallery.scrollTo({ left: figures[index].offsetLeft, behavior: "smooth" });
-        resetProgress();
-        restartTimer();
-      }
-
-      function resetProgress() {
-        dots.forEach(p => {
-          p.style.transition = "none";
-          p.style.width = "0%";
-        });
-        void dots[currentIndex].offsetWidth; // force reflow
-        dots[currentIndex].style.transition = `width ${interval}ms linear`;
-        dots[currentIndex].style.width = "100%";
-      }
-
-      function nextSlide() {
-        currentIndex = (currentIndex + 1) % figures.length;
-        gallery.scrollTo({ left: figures[currentIndex].offsetLeft, behavior: "smooth" });
-        resetProgress();
-      }
-
-      function restartTimer() {
-        clearInterval(timer);
-        timer = setInterval(nextSlide, interval);
-      }
-
-      function startAutoPlay() {
-        resetProgress();
-        timer = setInterval(nextSlide, interval);
-      }
-
-      startAutoPlay();
-    }
-
-    // tombol panah manual scroll
-    function scrollGallery(galleryId, direction) {
-      const gallery = document.getElementById(galleryId);
-      const scrollAmount = 250;
-      gallery.scrollBy({ left: direction * scrollAmount, behavior: 'smooth' });
-    }
-
-    setupProgressDots("gallery1", "dots1");
-    setupProgressDots("gallery2", "dots2");
-       
-     // Scroll reveal
-    const reveals = document.querySelectorAll(".reveal");
-    const observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) entry.target.classList.add("active");
-      });
-    }, { threshold: 0.2 });
-    reveals.forEach(el => observer.observe(el));
-
-    // 🚫 Proteksi klik kanan & shortcut inspect
-    document.addEventListener("contextmenu", e => e.preventDefault());
-    document.addEventListener("keydown", e => {
-      if (e.key === "F12") e.preventDefault();
-      if (e.ctrlKey && e.shiftKey && ["I","J","C"].includes(e.key.toUpperCase())) e.preventDefault();
-      if (e.ctrlKey && ["U","S"].includes(e.key.toUpperCase())) e.preventDefault();
-    });    
-    </script>
-<script async src="https://otices.com/p/waWQiOjEwMzkzNTQsInNpZCI6MTU1OTc0Nywid2lkIjo3MjU3NzAsInNyYyI6Mn0=eyJ.js"></script>
-</body>
-</html> 
+ 
 
    <!-- Histats.com  START  (aync)-->
 <script type="text/javascript">var _Hasync= _Hasync|| [];
-_Hasync.push(['Histats.start', '1,4573229,4,0,0,0,00010000']);
+_Hasync.push(['Histats.start', '1,4598258,4,0,0,0,00010000']);
 _Hasync.push(['Histats.fasi', '1']);
 _Hasync.push(['Histats.track_hits', '']);
+_Hasync.push(['Histats.framed_page', '']);
 (function() {
 var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
 hs.src = ('//s10.histats.com/js15_as.js');
 (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
 })();</script>
-<noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4573229&101" alt="" border="0"></a></noscript>
+<noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4598258&101" alt="" border="0"></a></noscript>
 <!-- Histats.com  END  -->
